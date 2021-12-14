@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>CAMTO</title>
+	<link rel="stylesheet" href="animate.css">
+	<script src="wow.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="fullpage.css" />
+	<script type="text/javascript" src="fullpage.js"></script>
+	
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: sans-serif;
+
+}
+html, body{
+	width: 100%;
+	height: fit-content;
+}
+
+nav .boxy {
+	top: 30px;
+	width: 100%;
+	max-width:  1000px;
+	float: left;
+	margin: 0 0 1em 0;
+	text-align: center;
+	padding: 10px;
+	align: center;
+}
+nav .boxy ul{
+	list-style:  none;
+	width: 1700px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+nav .boxy ul li{
+	display:  inline-block;
+}
+nav .boxy ul li a {
+	display: inline-block;
+	padding:  10px 60px;
+	color: skyblue;
+	text-decoration: none;
+}
+nav .boxy ul li.active {
+	background-color: white;
+	opacity: .5;
+	border-radius: 20px;
+	transition: 0.3 ease background-color;
+}
+nav .boxy ul li.active a{
+	color: blue;
+}
+
+
+section{
+	height:  100vh;
+	display: flex;
+	scroll-snap-align: start;
+	position: relative;
+}
+
+#one{
+	background: white;
+	background: url("one_background.jpg");
+	background-size: cover;
+}
+
+img.a {
+	width: 30vw;
+	height: auto;
+	position: absolute;
+	right: 7.6389vw;
+	bottom: 12vh;
+}
+
+img.b{
+	width: 32vw;
+	height: auto;
+	position:  absolute;
+	left:  8.333vw;
+	top: 26vh;
+}
+
+img.c{
+	width: 14.1243vw;
+	height: auto;
+	position: absolute;
+	top: 7vw;
+	left: 8.333vw;
+}
+#two{
+	background: rgb(97, 159, 251);
+}
+
+img.d{
+	width: 54vw;
+	height: auto;
+	position: absolute;
+	right: 2vw;
+	bottom: 5vw;
+
+}
+
+img.e{
+	width: 38vw;
+	height: auto;
+	position: absolute;
+	right: 19vw;
+	bottom: 34vw;
+
+}
+
+img.ee{
+	width: 17vw;
+	height: auto;
+	position: absolute;
+	left:  8.333vw;
+	top: 30vw;
+
+}
+
+img.eemid{
+	width: 24.0694vw;
+	height: auto;
+	position: absolute;
+	left:  8.333vw;
+	top: 35vw;
+
+}
+
+img.eee{
+	width: 28vw;
+	height: auto;
+	position: absolute;
+	left:  8.333vw;
+	top: 40vw;
+
+}
+
+img.twoicn{
+	width: 4vw;
+	height: auto;
+	position: absolute;
+	left:  8.333vw;
+	top: 24vw;
+
+}
+
+#three{
+	background: rgb(238, 245, 255);
+}
+
+img.f{
+	width: 64vw;
+	height: auto;
+	position: absolute;
+	left: 3vw;
+	bottom: 0;
+}
+
+img.g{
+	width: 15vw;
+	height: auto;
+	position: absolute;
+	right:  8.333vw;
+	top: 30vw;
+}
+
+img.gmid{
+	width: 24.0694vw;
+	height: auto;
+	position: absolute;
+	right:  8.333vw;
+	top: 37vw;
+}
+
+img.gg{
+	width: 24vw;
+	height: auto;
+	position: absolute;
+	right:  8.333vw;
+	top: 42vw;
+}
+
+img.threeicn{
+	width: 4vw;
+	height: auto;
+	position: absolute;
+	right:  8.333vw;
+	top: 24vw;
+
+}
+
+#four{
+	background: rgb(97, 159, 251);
+}
+
+img.h{
+	width: 34vw;
+	height: auto;
+	position: absolute;
+	right: 30vw;
+	top: 5vw;
+}
+
+img.i{
+	width: 44vw;
+	height: auto;
+	position: absolute;
+	left: 28%;
+	bottom: 13vw;
+}
+
+img.j{
+	width: 14vw;
+	height: auto;
+	position: absolute;
+	left: 43%;
+	bottom: 8vw;
+}
+
+img.k{
+	width: 18vw;
+	height: auto;
+	position: absolute;
+	left:  13vw;
+	bottom: 30vw;
+}
+
+img.l{
+	width: 18vw;
+	height: auto;
+	position: absolute;
+	left:  19vw;
+	bottom: 18vw;
+}
+
+img.m{
+	width: 18vw;
+	height: auto;
+	position: absolute;
+	right:  13vw;
+	bottom: 13vw;
+}
+
+img.n{
+	width: 18vw;
+	height: auto;
+	position: absolute;
+	right:  14vw;
+	bottom: 18vw;
+}
+
+img.o{
+	width: 18vw;
+	height: auto;
+	position: absolute;
+	right:  16vw;
+	bottom: 35vw;
+}
+
+img.p{
+	width: 28vw;
+	height: auto;
+	position: absolute;
+	left: 37%;
+	top: 26vw;
+}
+
+img.q{
+	width: 14vw;
+	height: auto;
+	position: absolute;
+	left: 43%;
+	top: 18vw;
+}
+
+img.fouricn{
+	width: 4vw;
+	height: auto;
+	position: absolute;
+	left:  29vw;
+	top: 6vw;
+
+}
+
+#five{
+	background: white;
+	background: url("five_background.png");
+	background-size: cover;
+}
+
+/*결국 스냅 작동을 못했는데.. js를 활용한 스냅 방법을 도저히 모르겠습니다..https://alvarotrigo.com/fullPage/*/
+
+.container{
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100%;
+	width: 100%;
+}
+</style>
+
+</head>
+<body>
+	<nav id="nav" style="position: fixed; left:0; top:0; z-index: 9999;">
+		<div class="boxy">
+			<ul>
+				<li class="one"><a href="">Intro</a></li>
+				<li class="two"><a href="">Home</a></li>
+				<li class="three"><a href="">Studyroom</a></li>
+				<li class="four"><a href="">Camstudy</a></li>
+				<li class="five"><a href="">Outro</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<section id="one">
+			
+			<img class = "wow slideInRight a" data-wow-duration="2s" data-wow-delay=".5s" src="one_img.png">
+		
+			<img class="wow slideInLeft b" data-wow-duration="1s" data-wow-delay=".5s" src="one_text.png">
+			<img class="wow slideInLeft c" src="one_logo.png">
+			<button></button>
+		</section>
+		<section id="two">
+			<img class="wow slideInRight d " src="two_img.png">
+			<img class="wow bounceInUp e" data-wow-duration="2s" data-wow-delay=".5s" src="two_pop.png">
+			<img class="wow slideInLeft ee" data-wow-duration="1s" data-wow-delay=".5s" src="two_title.png">
+			<img class="wow slideInLeft eemid" data-wow-duration="1.5s" data-wow-delay=".5s" src="two_midtitle.png">
+			<img class="wow slideInLeft eee" data-wow-duration="1.5s" data-wow-delay=".5s" src="two_text.png">
+			<img class="wow slideInLeft twoicn" data-wow-duration="1s" data-wow-delay=".5s" src="two_icn.png">
+		</section>
+		<section id="three">
+			<img class="wow bounceInUp f" data-wow-duration="2s" data-wow-delay=".5s" src="three_img.png">
+			<img class="wow slideInRight g" data-wow-duration="1s" data-wow-delay=".5s" src="three_title.png">
+			<img class="wow slideInRight gmid" data-wow-duration="2.3
+			s" data-wow-delay=".5s" src="three_midtitle.png">
+			<img class="wow slideInRight gg" data-wow-duration="2.7
+			s" data-wow-delay=".5s" src="three_text.png">
+			<img class="wow slideInRight threeicn" data-wow-duration="1s" data-wow-delay=".5s" src="three_icn.png">
+		</section>
+		<section id="four">
+			<img class="wow bounceInUp h" data-wow-duration="1.5s" data-wow-delay=".5s" src="four_text.png">
+			<img class="wow bounceInUp i" src="four_img_main.png">
+			<img class="wow bounceInUp j" data-wow-duration="2s" data-wow-delay=".5s" src="four_img_sub.png">
+			<img class="wow bounceInUp k" data-wow-duration="2s" data-wow-delay=".5s" src="four_img_1.png">
+			<img class="wow bounceInUp l" data-wow-duration="2s" data-wow-delay=".5s" src="four_img_2.png">
+			<img class="wow bounceInUp m" data-wow-duration="2s" data-wow-delay=".5s" src="four_img_3.png">
+			<img class="wow bounceInUp n" data-wow-duration="2s" data-wow-delay=".5s" src="four_img_4.png">
+			<img class="wow bounceInUp o" data-wow-duration="2s" data-wow-delay=".5s"src="four_img_5.png">
+			<img class="wow bounceInUp fouricn" data-wow-duration="1.5s" data-wow-delay=".5s" src="four_icn.png">
+		</section>
+		<section id="five">
+			<img class="wow bounceInUp p" data-wow-duration="1.5s" data-wow-delay=".5s" src="five_text.png">
+			<a href="https://www.figma.com/proto/zdf46kbFadjJhBIjUJ11tI/CAMTO?page-id=0%3A1&node-id=1%3A40&viewport=244%2C48%2C0.15&scaling=scale-down&starting-point-node-id=1%3A40"><img class="wow bounceInUp q" data-wow-duration="2.5s" data-wow-delay=".5s" src="five_img.png"></a>
+		</section>
+
+	
+</body>
+</html>
+
+<script type="text/javascript">
+
+	const sections = document.querySelectorAll('section');
+	const navLi = document.querySelectorAll('nav .boxy ul li');
+
+	window.addEventListener('scroll', ()=> {
+		let current = '';
+
+		sections.forEach( section => {
+			const sectionTop = section.offsetTop;
+			const sectionHeight = section.clientHeight;
+			if(pageYOffset >= sectionTop){
+				current = section.getAttribute('id');
+			}
+		})
+		console.log(current);
+	navLi.forEach( li => {
+			li.classList.remove('active');
+			if(li.classList.contains(current)){
+				li.classList.add('active')
+			}
+		})
+	})
+	
+
+
+	 wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null,    // optional scroll container selector, otherwise use window,
+    resetAnimation: true,     // reset animation on end (default is true)
+  }
+);
+wow.init();
+</script>
